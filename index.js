@@ -20,7 +20,6 @@
 
 // // console.log(proxy)
 
-
 // // 객체
 // const obj = {
 //     name : '이윤호',
@@ -63,19 +62,19 @@
 // // 2x2x2
 // console.log(2 ** 3);
 
-// // 증감 연산자 
+// // 증감 연산자
 // let number = 10;
 // number++;
 
 // console.log(number);
 
-// const a = 2 < 3; 
+// const a = 2 < 3;
 // const b = 30 > 50;
 
-// // & 연산자는 두변의 값이 같아야 true 
+// // & 연산자는 두변의 값이 같아야 true
 // console.log(a && b);
 
-// // || 연산자는 두변 중 하나의 값이 true면 true 
+// // || 연산자는 두변 중 하나의 값이 true면 true
 // console.log(a || b);
 
 // // 삼항 연산자
@@ -90,84 +89,157 @@
 
 // console.log(c ?? d ?? e);
 
-const a = 10;
-const b = 20;
-const c = 20;
+// const a = 10;
+// const b = 20;
+// const c = 20;
 
-if(a > b) {
-    console.log('a가 더 큽니다!');
+// if(a > b) {
+//     console.log('a가 더 큽니다!');
 
-} else if (b !== c) {
-    console.log('b랑 c가 같습니다!');
+// } else if (b !== c) {
+//     console.log('b랑 c가 같습니다!');
 
-} else {
-    alert('여기는 언제 출력되나요?');
-    
+// } else {
+//     alert('여기는 언제 출력되나요?');
+
+// }
+
+// const number = 10;
+
+// switch (number) {
+//     case 10:
+//         console.log(number);
+//     case 2:
+//         console.log(number);
+//         break;
+//     default:
+//         console.log('아무것도 해당되지 않아요!');
+// }
+
+// if (number % 2 == 0) {
+//     console.log('짝수!');
+// } else {
+//     console.log('홀수!');
+// }
+
+// switch (number % 2) {
+//     case 0:
+//         console.log('짝수!');
+//         break;
+//     case 1:
+//         console.log('홀수!');
+//         break;
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     if (i === 7) {
+//         continue;
+//     }
+
+//     console.log(i);
+// }
+
+// const arr = [1, 2, 3];
+
+// for (const i of arr) {
+//     console.log(i);
+// }
+
+// let i = 0;
+
+// while (i < 10) {
+//     console.log(i++);
+// }
+
+// function bok(main) {
+//     console.log(`${main} 볶음밥`)
+// }
+
+// bok('새우');
+// bok('김치');
+
+// function sum(a, b) {
+//     console.log(a + b);
+// }
+// sum(10,20);
+
+// function a() {
+//     const b = 10;
+//     console.log(b);
+// }
+
+// a();
+// console.log(b);
+
+var add = function(a,b) {
+    console.log(a+b);
+};
+
+add(3,8);
+
+// 화살표 함수
+// 코드의 라인을 줄이기 위해 사용
+
+const add = (a, b) => a+b;
+console.log(add(1,7));
+
+// 생성자 함수
+function Parson(name,age) {
+    this.name = name;
+    this.age = age;
+    this.walk = function() {
+
+        console.log("걷는중");
+    }
 }
 
-const number = 10;
+const p1 = new Parson("홍길동",20);
+const p2 = new Parson("신길동",30);
 
-switch (number) {
-    case 10:
-        console.log(number);
-    case 2:
-        console.log(number);
-        break;
-    default:
-        console.log('아무것도 해당되지 않아요!');
-}
+console.log(p1);
+console.log(p2);
 
-if (number % 2 == 0) {
-    console.log('짝수!');
-} else {
-    console.log('홀수!');
-}
+console.log(p2.name);
+console.log(p2.walk());
 
-switch (number % 2) {
-    case 0:
-        console.log('짝수!');
-        break;
-    case 1:
-        console.log('홀수!');
-        break;
-}
+// 내부 함수
+function outer() {
+    let x = 10;
 
-for (let i = 0; i < 10; i++) {
-    if (i === 7) {
-        continue;
+    function inner() {
+        console.log(x);
     }
 
-    console.log(i);
+    inner();
 }
 
-const arr = [1, 2, 3];
+outer();
 
-for (const i of arr) {
-    console.log(i);
+
+// 재귀 함수
+function countdown(cnt) {
+    if (cnt === 0) {
+    console.log("0이 되었습니다");
+        } else {
+    console.log(cnt);
+    countdown(cnt - 1);
+    }
 }
 
-let i = 0;
+countdown(5);
 
-while (i < 10) {
-    console.log(i++);
+// 콜백 함수
+
+// 콜백 함수 예시
+function fetchData(callback) {
+    // 비동기 작업 시뮬레이션 (예: setTimeout을 사용하여 1초 후에 콜백 실행)
+    setTimeout(function() {
+        const data = '이것은 데이터입니다!';
+        callback(data); // 콜백 함수 호출
+    }, 1000);
 }
 
-function bok(main) {
-    console.log(`${main} 볶음밥`)
-}
-
-bok('새우');
-bok('김치');
-
-function sum(a, b) {
-    console.log(a + b);
-}
-sum(10,20);
-
-function a() {
-    const b = 10;
-    console.log(b);
-}
-
-a();
-console.log(b);
+// fetchData 함수 호출과 콜백 함수 전달
+fetchData(function(data) {
+    console.log('받은 데이터:', data);
+});
