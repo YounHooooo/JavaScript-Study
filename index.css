@@ -1,4 +1,4 @@
-/* 
+/* /* 
 * {
     margin: 0;
 }
@@ -48,7 +48,7 @@ div {
 }
  */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -103,3 +103,16 @@ button:hover {
     background-color: white;
     border: 1px solid gray;
 }
+
+
+
+
+
+
+
+
+.wrap {
+    display: flex;
+    font-size:x-large;
+    font-weight:bolder;
+}  */

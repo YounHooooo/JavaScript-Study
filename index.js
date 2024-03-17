@@ -403,18 +403,18 @@
 
 
 
-// 모달창
+// 버튼 클릭시 모달창 띄우고 닫기
 
-const openButton = document.querySelector('.open');
-const closeButton = document.querySelector('.close');
-const container = document.querySelector('.container');
+// const openButton = document.querySelector('.open');
+// const closeButton = document.querySelector('.close');
+// const container = document.querySelector('.container');
 
-openButton.addEventListener('click', () =>{
-    container.style.display = 'flex';
-    openButton.style.display = 'none';
-});
+// openButton.addEventListener('click', () =>{
+//     container.style.display = 'flex';
+//     openButton.style.display = 'none';
+// });
 
-closeButton.addEventListener('click', () => {
-    container.style.display = 'none';
-    openButton.style.display = 'flex';
-})
+// closeButton.addEventListener('click', () => {
+//     container.style.display = 'none';
+//     openButton.style.display = 'flex';
+// })
