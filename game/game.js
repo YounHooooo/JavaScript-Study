@@ -21,7 +21,7 @@ const game = (user, computer) => {
     let message;
 
     if (user === computer) {
-        console.log('무승부');
+        message = '무승부!';
     } else {
         switch (user + computer) {
             case '가위보':
