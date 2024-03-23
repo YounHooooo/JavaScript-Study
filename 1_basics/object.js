@@ -81,3 +81,56 @@ const yujin3 = {
 };
 
 console.log(yujin3);
+
+
+
+
+
+let myHome = {
+    name: ['younHo','sengho'],
+    age: ['30','29'],
+    hobby: function() {
+        return `${this.name[0]}는 공부중입니다.`;
+    },
+}
+
+console.log(myHome);
+console.log(myHome.hobby());
+
+
+
+
+// // 객체 변수 선언
+// const person = {
+//     name: '워너비',
+//     eat: function(food) {
+//         console.log(this.name + '가 ' + food + '를 먹습니다.');
+//     }
+
+// };
+
+// // 메서드 호출
+// person.eat('딸기');
+
+
+const person = {
+    name: 'younHo',
+    age: '30',
+    ing: function() {
+        return `${this.name}은 ${this.age}살 입니다.`;
+    }
+};
+
+
+const object = {
+    number: 273,
+    string: 'wanneBe',
+    boolean: true,
+    array: [1,2,3,4,5],
+    method: function(){
+        alert('메소드실행')
+    }
+}
+
+
+console.log(object.array);
