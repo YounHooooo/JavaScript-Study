@@ -114,3 +114,51 @@ console.log(multiplyAll(3, 4, 5, 6, 7, 8, 9, 10));
 
 console.log(typeof multiply);
 console.log(multiply instanceof Object); 
+
+
+// 복습
+console.log('-----------------');
+
+function calculate(number){
+    console.log((number * 10 / 2 % 3).toString());
+    
+}
+
+calculate(4);
+calculate(5);
+
+function multiply(x = 5, y){
+    console.log(x * y);
+}
+
+multiply(2, 5);
+multiply(2);
+
+/**
+ * 반환
+ * return
+ */
+
+function multiply(x, y){
+    return x * y;
+}
+
+const result3 = multiply(2, 4);
+console.log(result3);
+
+const multiply6 = (x, y) => {
+    return x * y;
+}
+console.log(multiply6(3, 4));
+
+const multi = (x, y) => x * y;
+console.log(multi(3, 9));
+
+const multilplyAll = function(...arguments){
+    return Object.values(arguments).reduce((a, b) => a * b, 1);
+}
+
+(function(x, y){
+    console.log(x * y);
+})
+(4, 5);

@@ -78,3 +78,4 @@ const yujin4 = {
 console.log(yujin4);
 
 console.log(yujin4 === yujin3);
+
