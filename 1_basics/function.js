@@ -162,3 +162,4 @@ const multilplyAll = function(...arguments){
     console.log(x * y);
 })
 (4, 5);
+
