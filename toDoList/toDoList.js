@@ -1,18 +1,18 @@
-// 할 일 앱 만들기
 
-// const form = document.querySelector('form');
-// const input = document.querySelector('input');
-// const ul = document.querySelector('ul');
 
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault();
+const form = document.querySelector('form');
+const input = document.querySelector('input');
+const ul = document.querySelector('ul');
 
-//     if (input.value !== '') {
-//         const li = document.createElement('li');
-//         li.innerText = input.value;
-//         ul.appendChild(li);
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-//         input.value = '';
-//     }
-// });
+    if (input.value !== '') {
+        const li = document.createElement('li');
+        li.innerText = input.value;
+        ul.appendChild(li);
+
+        input.value = '';
+    }
+});
 
