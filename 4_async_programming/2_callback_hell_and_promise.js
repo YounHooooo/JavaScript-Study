@@ -79,7 +79,8 @@ const getPromise = (seconds) =>
 
     //     return getPromise(4);
     // });
-    
+
+
 Promise.all([
     getPromise(1),
     getPromise(2),
