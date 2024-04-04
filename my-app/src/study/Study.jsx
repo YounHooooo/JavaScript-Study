@@ -21,5 +21,5 @@ class Welcome extends React.Component {
 // HTML div 태그로 인식
 const elemnent = <div />;
 
-// Welcome이라는 리액트 COmponent로 인식
+// Welcome이라는 리액트 Component로 인식
 const element = <Welcome name="인제" />;

@@ -35,3 +35,4 @@ props = {
     text: "댓글",
     date: Date.now(),
 }
+
