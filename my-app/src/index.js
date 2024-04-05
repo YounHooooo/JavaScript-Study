@@ -13,13 +13,16 @@ import ConfirmButton from './chapter_08/ConfirmButton';
 import LandingPage from './chapter_09/LandingPage';
 import AttendanceBook from './chapter_10/AttendanceBook';
 import SignUp from './chapter_11/SignUp';
+import Test from './study/Test';
+import ParentComponent from './study/ParentComponent';
+import CounterComponent from './study/CounterComponent';
 
 const root = createRoot(document.getElementById('root'));
 
 setInterval(() => {
   root.render(
     <React.StrictMode>
-      <TodoList />
+      <CounterComponent />
     </React.StrictMode>,
   );
 });
