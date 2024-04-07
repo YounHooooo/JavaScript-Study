@@ -23,3 +23,4 @@ const elemnent = <div />;
 
 // Welcome이라는 리액트 Component로 인식
 const element = <Welcome name="인제" />;
+

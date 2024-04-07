@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import TodoList, { useRef } from './todo_list/TodoList';
+import TodoList, { useRef } from './components/TodoList/TodoList';
 import reportWebVitals from './reportWebVitals';
 
 import Library from './chapter_03/Library';
@@ -16,13 +16,14 @@ import SignUp from './chapter_11/SignUp';
 import Test from './study/Test';
 import ParentComponent from './study/ParentComponent';
 import CounterComponent from './study/CounterComponent';
+import Home from './components/Calculator';
 
 const root = createRoot(document.getElementById('root'));
 
 setInterval(() => {
   root.render(
     <React.StrictMode>
-      <CounterComponent />
+      <Home />
     </React.StrictMode>,
   );
 });
