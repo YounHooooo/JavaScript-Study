@@ -16,14 +16,16 @@ import SignUp from './chapter_11/SignUp';
 import Test from './study/Test';
 import ParentComponent from './study/ParentComponent';
 import CounterComponent from './study/CounterComponent';
-import Home from './components/Calculator';
+
+import Home from './components/Calculator'; // 계산기
+import DatePicker from './components/DatePicker';
 
 const root = createRoot(document.getElementById('root'));
 
 setInterval(() => {
   root.render(
     <React.StrictMode>
-      <Home />
+      <TodoList />
     </React.StrictMode>,
   );
 });

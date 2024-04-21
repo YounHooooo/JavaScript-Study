@@ -1,10 +1,12 @@
 import React from "react";
-import { Header, PickerWrapper, Body, SevenGolGrid } from "./styled";
+import { useState } from "react";
+import "./styled";
 
-const DatePicker = () => {
+export const DatePicker = () => {
     const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
     const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
-    return 
+
+    return (
             <PickerWrapper>
                 <Header>
                         <p>{monthNames[currentMonth]}</p>
@@ -15,6 +17,7 @@ const DatePicker = () => {
                     </SevenGolGrid>
                 </Body>
             </PickerWrapper>
+    )
 };
 
 export default DatePicker;
