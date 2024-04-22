@@ -18,6 +18,7 @@ for(let i = 10; i > 0; i --){
 }
 
 // *을 이용해서 6x6의 정사각형 출력
+
 let square = '';
 let side = 6;
 
