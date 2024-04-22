@@ -1,7 +1,6 @@
 /**
  * Object / 객체
  */
-
 // key : value pair
 
 let younHo = {
@@ -63,7 +62,6 @@ console.log(wonYoung);
 wonYoung['group'] = '코드팩토리';
 console.log(wonYoung);
 
-
 /**
  * 모든 키값 다 가져오기
  */
@@ -75,15 +73,10 @@ console.log(Object.keys(wonYoung));
 console.log(Object.values(wonYoung));
 
 const name = '안유진';
-
 const yujin3 = {
     name,
 };
-
 console.log(yujin3);
-
-
-
 
 
 let myHome = {
@@ -97,9 +90,6 @@ let myHome = {
 console.log(myHome);
 console.log(myHome.hobby());
 
-
-
-
 // // 객체 변수 선언
 // const person = {
 //     name: '워너비',
@@ -112,7 +102,6 @@ console.log(myHome.hobby());
 // // 메서드 호출
 // person.eat('딸기');
 
-
 const person = {
     name: 'younHo',
     age: '30',
@@ -120,7 +109,6 @@ const person = {
         return `${this.name}은 ${this.age}살 입니다.`;
     }
 };
-
 
 const object = {
     number: 273,
@@ -131,6 +119,4 @@ const object = {
         alert('메소드실행')
     }
 }
-
-
 console.log(object.array);

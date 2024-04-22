@@ -13,5 +13,4 @@ function clock() {
     sec.innerText = now.getSeconds();
 }
 
-
 setInterval(clock, 1000); // 1초
