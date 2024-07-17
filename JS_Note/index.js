@@ -33,9 +33,8 @@
 // let c = [...a,...b]
 // console.log(c);
 
-
 // 삼항연산자
-let person = {name:"Younho", age: 30}
+// let person = { name: "Younho", age: 30 };
 
 // if(person) {
 //     console.log(person.name)
@@ -43,4 +42,35 @@ let person = {name:"Younho", age: 30}
 //     console.log("there is no person")
 // }
 
-console.log(person?person.name:"there is no person")
+// console.log(person ? person.name : "there is no person");
+
+// const title = document.getElementById("output");
+// console.log(title);
+
+// const title = document.querySelector("h2");
+// console.log(title);
+
+// title.innerText = "안녕하세요!";
+// title.style.color = "blue";
+
+// const title = document.createElement("h1");
+// const body = document.querySelector("body");
+
+// title.innerText = "새로운 친구에요!";
+// title.style.color = "skyblue";
+
+// body.appendChild(title);
+
+const button = document.querySelector("button");
+const removeButton = document.querySelector(".remove");
+
+function handler(event) {
+  console.log("★");
+}
+
+function removeHandler(event) {
+  button.removeEventListener("click", handler);
+}
+
+button.addEventListener("click", handler);
+removeButton.addEventListener("click", removeHandler);

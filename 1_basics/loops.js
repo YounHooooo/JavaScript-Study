@@ -77,7 +77,6 @@ while(number < 10){
 
 console.log(number);
 
-
 /**
  * do...while
  * 코드 먼저 실행 후 조건 판단

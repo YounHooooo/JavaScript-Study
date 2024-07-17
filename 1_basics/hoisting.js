@@ -19,3 +19,4 @@ console.log(name);
 
 console.log(yujin);
 let yujin = '안유진';
+
