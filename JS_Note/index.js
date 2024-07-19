@@ -143,17 +143,69 @@
 // };
 // console.log(sum(10, 20));
 
-const hello = () => {
-  console.log("Hello");
-  console.log("asd");
-};
+// const hello = () => {
+//   console.log("Hello");
+//   console.log("asd");
+// };
 
-const sum = (a, b) => {
-  return a + b;
-};
-console.log(sum(10, 20));
+// const sum = (a, b) => {
+//   return a + b;
+// };
+// console.log(sum(10, 20));
 
-const greeting = (user) => {
-  console.log(`Hello, ${user}`);
-};
-greeting("이윤호");
+// const greeting = (user) => {
+//   console.log(`Hello, ${user}`);
+// };
+// greeting("이윤호");
+
+// const age = 20;
+// const job = "개발자";
+
+// const msg = "저는 " + job + "이고 " + age + "살 입니다.";
+
+// console.log(msg);
+
+// const msg1 = `저는 ${job}이고 ${age}살 입니다.`;
+// console.log(msg1);
+
+// null 값이 존재하지 않음
+// undefined 값이 지정되지 않음
+// let hello;
+// console.log(hello);
+
+// const arr = [1, 2, 3];
+
+// const obj = {
+//   name: "이윤호",
+//   age: 30,
+//   job: "개발자",
+// };
+
+// console.log(obj);
+// let number = 10;
+// number++;
+// console.log(number);
+
+// const a = 2 < 3;
+// const b = 5 < 2;
+
+// console.log(!a);
+
+// 삼항 연산자
+// 조건? 참일 때 실행될 부분 : 거짓일 때 실행될 부분
+
+// console.log(2 > 3 ? "참" : " 거짓");
+
+// 널리쉬
+// const a = undefined;
+// const b = null;
+// const c = "이윤호";
+
+// console.log(a ?? b ?? c);
+
+// const numbers = [1, 2, 3];
+// const numbers2 = [4, 5, 6];
+
+// const newNumbers = [...numbers, ...numbers2];
+
+// console.log(newNumbers);
